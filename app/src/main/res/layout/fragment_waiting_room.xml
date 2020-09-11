@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:tag="waiting_room_fragment"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutGameCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/text_waiting_for_players"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_game_code_1"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="bottom|center"
+            android:includeFontPadding="false"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="A A A 0 0"
+            android:textColor="#000000"
+            android:textSize="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48000002" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text_waiting_for_players"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/lapsus_pro_bold"
+        android:includeFontPadding="true"
+        android:text="@string/waiting_for_players"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scroll_members"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutGameCode" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutOptionsPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        app:layout_constraintBottom_toTopOf="@+id/button_begin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll_members">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutOptionsTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/text_options_timer_title"
+            app:layout_constraintEnd_toStartOf="@+id/layoutOptionsAngels"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <Button
+                android:id="@+id/button_timer_add"
+                style="@style/button"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/ic_up_triangle"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/button_timer_minus"
+                app:layout_constraintEnd_toEndOf="@+id/button_timer_minus"
+                app:layout_constraintStart_toEndOf="@+id/button_timer_minus"
+                app:layout_constraintStart_toStartOf="@+id/button_timer_minus"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+            <Button
+                android:id="@+id/button_timer_minus"
+                style="@style/button"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/ic_down_triangle"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/img_clock"
+                app:layout_constraintTop_toBottomOf="@+id/button_timer_add" />
+
+            <ImageView
+                android:id="@+id/img_clock_bg"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="multiply"
+                android:scaleType="fitXY"
+                android:tint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/img_clock"
+                app:layout_constraintEnd_toEndOf="@+id/img_clock"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@+id/img_clock"
+                app:layout_constraintTop_toTopOf="@+id/img_clock"
+                app:srcCompat="@drawable/ic_clock_bg" />
+
+            <ImageView
+                android:id="@+id/img_clock"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="multiply"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_timer_minus"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_clock" />
+
+            <EditText
+                android:id="@+id/edit_timer_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_shape"
+                android:backgroundTint="#00FFFFFF"
+                android:editable="false"
+                android:ems="1"
+                android:fontFamily="@font/showg"
+                android:includeFontPadding="false"
+                android:shadowColor="#FFFFFF"
+                android:shadowRadius="20"
+                android:singleLine="true"
+                android:text="3"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/img_clock"
+                app:layout_constraintStart_toStartOf="@+id/img_clock"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.65999997" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutOptionsAngels"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/layoutOptionsTimer"
+            app:layout_constraintEnd_toStartOf="@+id/layoutOptionsLewdness"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/layoutOptionsTimer"
+            app:layout_constraintTop_toTopOf="@id/layoutOptionsTimer">
+
+            <Switch
+                android:id="@+id/switch_angels"
+                android:layout_width="45dp"
+                android:layout_height="0dp"
+                android:checked="true"
+                android:gravity="start"
+                android:rotation="270"
+                android:thumbTint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/img_angels"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.75" />
+
+            <ImageView
+                android:id="@+id/img_angels_bg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:backgroundTintMode="add"
+                android:foregroundTintMode="multiply"
+                android:scaleType="centerInside"
+                android:tint="#FFE70F"
+                app:layout_constraintBottom_toBottomOf="@id/img_angels"
+                app:layout_constraintEnd_toEndOf="@id/img_angels"
+                app:layout_constraintStart_toStartOf="@id/img_angels"
+                app:layout_constraintTop_toTopOf="@id/img_angels"
+                app:srcCompat="@drawable/ic_angels_bg" />
+
+            <ImageView
+                android:id="@+id/img_angels"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#F4DF5D"
+                android:backgroundTintMode="multiply"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/switch_angels"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_angels" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutOptionsLewdness"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/layoutOptionsAngels"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/layoutOptionsAngels"
+            app:layout_constraintTop_toTopOf="@id/layoutOptionsAngels">
+
+            <Switch
+                android:id="@+id/switch_bubble"
+                android:layout_width="45dp"
+                android:layout_height="0dp"
+                android:gravity="start"
+                android:rotation="270"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_bubble"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/img_bubble_bg"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:tint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/img_bubble"
+                app:layout_constraintEnd_toEndOf="@+id/img_bubble"
+                app:layout_constraintStart_toStartOf="@+id/img_bubble"
+                app:layout_constraintTop_toTopOf="@+id/img_bubble"
+                app:srcCompat="@drawable/ic_bubble_bg" />
+
+            <ImageView
+                android:id="@+id/img_bubble"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/switch_bubble"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_lewdness_v2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/text_options_timer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/brlnsr"
+            android:text="TIMER (MINS)"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/layoutOptionsTimer"
+            app:layout_constraintTop_toBottomOf="@+id/layoutOptionsTimer" />
+
+        <TextView
+            android:id="@+id/text_options_angels_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brlnsr"
+            android:text='"ALL TRUE" ALLOWED'
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="@+id/layoutOptionsAngels"
+            app:layout_constraintTop_toBottomOf="@+id/layoutOptionsAngels" />
+
+        <TextView
+            android:id="@+id/text_options_lewd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brlnsr"
+            android:text="LEWD HINTS DISABLED"
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="@+id/layoutOptionsLewdness"
+            app:layout_constraintTop_toBottomOf="@+id/layoutOptionsLewdness" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/button_begin"
+        style="@style/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lapsus_pro_bold"
+        android:text="BEGIN GAME"
+        android:textColor="#515151"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutOptionsPanel" />
+
+    <ScrollView
+        android:id="@+id/scroll_members"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fillViewport="true"
+        android:minHeight="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutOptionsPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_waiting_for_players">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <ListView
+                android:id="@+id/list_members"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

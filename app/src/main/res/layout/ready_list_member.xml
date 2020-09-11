@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_results_child"
+    android:backgroundTintMode="multiply">
+
+    <TextView
+        android:id="@+id/textNameReadyList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lapsus_pro_bold"
+        android:gravity="start"
+        android:text="Player Name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_ready_list_ready"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_ready_list_ready"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lapsus_pro_bold"
+        android:gravity="end"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="VOTED\ "
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textNameReadyList"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.arrowsmith.llv1.classes.LoadingDots
+        android:id="@+id/loadingDotsReadyList"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        app:LoadingDots_auto_play="true"
+        app:LoadingDots_dots_color="#6A6A6A"
+        app:LoadingDots_dots_count="3"
+        app:LoadingDots_dots_size="5dp"
+        app:LoadingDots_dots_space="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </com.arrowsmith.llv1.classes.LoadingDots>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!--background to compensate the transparency under shadow and glow (for bigger depth values)-->
+
+    <!--top, dark, inner shadow-->
+
+    <!--bottom, light, outer glow-->
+    <item
+        android:top="5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#4DFFFFFF" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/white"></solid>
+            <padding android:top="5dp"></padding>
+        </shape>
+
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+
+            <gradient
+                android:startColor="@color/red"
+                android:centerColor="@color/colorPrimary"
+                android:endColor="@color/colorPrimary"
+                android:angle="270"/>
+        </shape>
+
+    </item>
+    </layer-list>

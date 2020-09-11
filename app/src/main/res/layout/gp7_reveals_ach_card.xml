@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootAchCard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_points_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/showg"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="+pts"
+        android:textAlignment="center"
+        android:textColor="@color/light_font"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_achievements_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/brlnsb"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="ach name"
+        android:textAlignment="center"
+        android:textColor="@color/light_font"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_achievements_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lapsus_pro_bold"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="ach string"
+        android:textAlignment="center"
+        android:textColor="@color/light_font"
+        android:textSize="18sp" />
+
+</LinearLayout>

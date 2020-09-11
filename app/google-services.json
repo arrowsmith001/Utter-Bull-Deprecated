@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "927291275205",
+    "firebase_url": "https://liarliargame-dc9f6.firebaseio.com",
+    "project_id": "liarliargame-dc9f6",
+    "storage_bucket": "liarliargame-dc9f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927291275205:android:e7461bb5091e6ef7f9fdac",
+        "android_client_info": {
+          "package_name": "com.arrowsmith.llv0"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927291275205-dsi8fr38kc88o0oep7ukq4h5c64pv5n6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMOho-pa4ngr_MeAT1xzR-62n2IwIvXwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927291275205-dsi8fr38kc88o0oep7ukq4h5c64pv5n6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927291275205:android:0bb7ba7ec4d43b22f9fdac",
+        "android_client_info": {
+          "package_name": "com.arrowsmith.llv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927291275205-dsi8fr38kc88o0oep7ukq4h5c64pv5n6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMOho-pa4ngr_MeAT1xzR-62n2IwIvXwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927291275205-dsi8fr38kc88o0oep7ukq4h5c64pv5n6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927291275205:android:7e00aa7e8a65034cf9fdac",
+        "android_client_info": {
+          "package_name": "com.arrowsmith.multiplayerdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927291275205-dsi8fr38kc88o0oep7ukq4h5c64pv5n6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMOho-pa4ngr_MeAT1xzR-62n2IwIvXwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927291275205-dsi8fr38kc88o0oep7ukq4h5c64pv5n6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

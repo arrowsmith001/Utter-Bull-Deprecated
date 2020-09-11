@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_results_header"
+    android:descendantFocusability="blocksDescendants"
+    android:hapticFeedbackEnabled="false">
+
+
+    <TextView
+        android:id="@+id/text_player_name_here"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="false"
+        android:duplicateParentState="true"
+        android:focusable="false"
+        android:fontFamily="@font/lapsus_pro_bold"
+        android:gravity="bottom|center_vertical"
+        android:text="Alexander Arrowsmith"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/layoutPointsBit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPointsBit"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:duplicateParentState="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_player_name_here"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_points_NEW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/showg"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:text="+000"
+            android:textColor="@color/grey"
+            android:textIsSelectable="false"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text_points_PREV"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/text_points_PREV"
+            app:layout_constraintTop_toBottomOf="@+id/text_points_PREV" />
+
+        <TextView
+            android:id="@+id/text_points_PREV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/showg"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:text="(000)"
+            android:textColor="@color/colorPrimaryDark"
+            android:textIsSelectable="false"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/text_points_NEW"
+            app:layout_constraintEnd_toStartOf="@+id/text_points"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/text_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:fontFamily="@font/showg"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

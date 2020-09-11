@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/alex_3_1316"
+    android:duration="@integer/duration_min">
+
+</item><item android:drawable="@drawable/alex_3_1317"
+    android:duration="@integer/duration_min"></item>
+
+    <!--</item><item android:drawable="@drawable/alex_3_1318"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1319"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1320"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1321"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1322"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1323"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1324"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1325"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1326"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1327"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1328"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1329"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1330"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1331"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1332"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1333"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1334"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1335"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1336"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1337"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1338"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1339"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1340"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1341"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/alex_3_1345"
+    android:duration="@integer/duration_min">
+
+    </item>-->
+</animation-list>

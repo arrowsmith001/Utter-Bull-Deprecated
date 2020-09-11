@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Utter Bull</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">CANCEL</string>
+    <string name="create_room">CREATE ROOM</string>
+    <string name="enter_name">Your name</string>
+    <string name="waiting_for_players">Waiting for players</string>
+    <string name="begin_game">BEGIN GAME</string>
+    <string name="join_room">JOIN ROOM</string>
+    <string name="are_you_sure_you_want_to_quit_this_game_session">
+        Are you sure you want to quit this game session?
+    </string>
+    <string name="ok">OK</string>
+    <string name="are_you_sure_you_want_to_quit_you_and_all_other_players_will_be_sent_back_to_the_lobby">
+        <![CDATA[
+Are you sure you want to quit? <font color=\'bg_edges_light\'><b><i>You and all other players will be sent back to the lobby.</i></b></font>
+]]>
+    </string>
+    <string name="choosing_player_to_read_out_their_statement">Choosing player to read out statement:</string>
+    <string name="truth">TRUE</string>
+    <string name="lie">BULL!</string>
+    <string name="you_cannot_vote_you_are_the_saboteur">
+        <![CDATA[
+<b><i>You cannot vote this round</i></b> because you wrote the lie. You can earn points by helping convince others its true, though.
+]]>
+    </string>
+    <string name="touch_to_continue">TOUCH TO CONTINUE</string>
+    <string name="you_voted">You voted</string>
+    <string name="tutorial_p1">
+        \tThanks for downloading Utter Bull, where the object of the game is…to utter bull, and to utter it well!</string>
+    <string name="tutorial_p2">
+        \tYou and your friends take it in turns to read out a TRUTH or a LIE about themselves.\n\n
+        \tEven if it\'s a lie, read it out as if it were true.\n\n
+        \tWhether it\'s true or not is kept secret until the very end!
+    </string>
+    <string name="tutorial_p3">
+        \tOnce a player reads out their statement, everyone else (individually) votes whether they think the statement is TRUE, or whether it\'s BULL (a lie).\n\n
+        \tDuring this decision time, the player may be interrogated by the rest of the group.\n\n
+        \tThe voters have until the end of a time limit to finalise their vote.
+    </string>
+    <string name="tutorial_p4">
+        \tIf the player reads out a LIE, they will score points based on how many vote TRUE.
+        The idea is to convince people the statement is actually the truth!\n\n
+
+        \tOn the other hand, if the player reads out a TRUTH, they will score points based on how many vote BULL.
+        The idea is to appear unconvincing, so that people actually think that you\'re lying!\n\n
+
+        \tEarn points by tricking your friends into believing the OPPOSITE of what\'s actually the case!
+    </string>
+    <string name="tutorial_p5">
+        \tBefore statements are read out by the players, they must first be written!\n\n
+
+	    \tPre-game, players are assigned the role of either liar or truth-teller.\n\n
+
+	    \tIf you\'re to read out a truth, you must write a truth about yourself. That\'s it.
+    </string>
+    <string name="tutorial_p6">
+        \tIf you\'re to read out a lie, then you must also write a lie… about SOMEONE ELSE in the group. (This person will be specified).
+	    Likewise, the lie that you read out will be written by someone else in the group. You will see it the moment your turn to read out starts.\n\n
+
+	    \tOf course, that means for every liar, there\'s a person who knows it\'s a lie (the person who wrote the lie).
+	    This person plays “the saboteur” during that lying player\'s turn. Their vote will not count in the end, but they still "pretend" vote (to blend in with the other voters).\n\n
+
+        \tLike the player reading, the saboteur will score points if people vote true!
+    </string>
+    <string name="tutorial_p7">
+        \tSince players write lies for other players, that lie might not turn out to be a lie - it might in fact be true for that player!\n\n
+
+	    \tIn this case, during play phase, the player reading out the statement can simply change it to true, and play it as if it were written a truth.\n\n
+
+	    \tIf this happens, the saboteur cannot gain points, and in fact will incur a penalty.\n\n
+
+	    \tThe lesson here: try your best to make the lie a lie! (But it still better be believable…)
+    </string>
+    <string name="tutorial_p8">
+        \tPlayers\' scores are based on achievements earned each turn.
+        Achievements are available based on the 3 distinct roles: player (reading out), saboteur (if there is one), and voter.\n\n
+
+        \tScores are awarded at the very end, so all player roles should be kept secret until they are revealed at the end.\n\n
+
+        \tPlaying as an adult group? Why not turn it into a drinking game for added hilarity?
+        Add rules like “drink for each turn in which you scored no points” and, as the player reading out, “drink for each voter who you didn\'t manage to mislead”.
+        And of course, if as saboteur your lie turned out true, you should definitely finish what you\'re drinking.
+    </string>
+    <string name="tutorial_p9">
+        \tFinally, there are some game settings that can be tweaked by whoever is hosting the game session.\n\n
+
+        \tHow long a player can be interrogated for on their turn is determined by the round timer.
+        By default this is 3 minutes, which is recommended.
+        It can go as low as 1 minute and, if you’re really serious about this, as high as 10 minutes.\n\n
+
+        \t“Liar” and “truth-teller” roles are randomly allocated, so it\'s possible for everyone to be a truth-teller.
+        Some may enjoy this possibility, but others may want at least some liars in the game.
+        You can decide to disallow the “All True” possibility with this setting.
+        (Note: this will not prevent an “all lies turned out true” scenario)\n\n
+
+        \tDuring the writing phase, you can get hints for inspiration if you\'re stuck for ideas on what to write.
+        The final setting determines whether the content of these hints will be family-friendly, or will include risqué suggestions.
+    </string>
+    <string name="tutorial_p10">
+        \tYou can revisit this tutorial any time by pressing “?” on the home screen.\n\n
+
+        \tGet started by going to “CREATE GAME” to create a new game session, or “JOIN GAME” to join an existing one.\n\n
+
+        \tHave fun!
+    </string>
+    <string name="info_text">This app was developed by Alexander Arrowsmith.</string>
+</resources>

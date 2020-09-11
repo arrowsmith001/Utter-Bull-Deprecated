@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainMenuRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:tag="main_menu"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_main_menu"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutMainMenuBottom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleFrame_0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutMainMenuBottom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleFrame_0">
+
+                <TextView
+                    android:id="@+id/textPermaNotif"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/lapsus_pro_bold"
+                    android:gravity="end"
+                    android:textColor="#FFC6C6"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/createGameLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/joinGameLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/createGameLayout">
+
+                    <ImageView
+                        android:id="@+id/image_join_0"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:alpha="1"
+                        android:tintMode="add"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/button_join_game_0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/arrows_glow_brown" />
+
+                    <TextView
+                        android:id="@+id/button_join_game_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="12dp"
+                        android:alpha="1"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/lapsus_pro_bold"
+                        android:rotation="0"
+                        android:shadowColor="@color/colorPrimaryDark"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="15"
+                        android:text="JOIN GAME"
+                        android:textAlignment="textEnd"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/image_join_0"
+                        app:layout_constraintEnd_toStartOf="@+id/image_join_0"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/image_join_0"
+                        app:layout_constraintVertical_bias="0.42000002" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/createGameLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/joinGameLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textPermaNotif"
+                    app:layout_constraintVertical_chainStyle="packed">
+
+                    <TextView
+                        android:id="@+id/button_create_game_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:alpha="1"
+                        android:background="#00FFFFFF"
+                        android:fontFamily="@font/lapsus_pro_bold"
+                        android:rotation="0"
+                        android:shadowColor="@color/colorPrimaryDark"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="15"
+                        android:text="CREATE GAME"
+                        android:textAlignment="textEnd"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/image_create_0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.59000003" />
+
+                    <ImageView
+                        android:id="@+id/image_create_"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:alpha="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:foregroundTintMode="add"
+                        android:tint="#FFFFFF"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/image_create_0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.62"
+                        app:srcCompat="@drawable/ic_bull_add_bg" />
+
+                    <ImageView
+                        android:id="@+id/image_create_0"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:alpha="1"
+                        android:backgroundTint="#FFFFFF"
+                        android:foregroundTintMode="add"
+                        android:tintMode="add"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/bull_add_glow_brown" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/button_create_clicker_0"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#00FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/createGameLayout"
+                    app:layout_constraintEnd_toEndOf="@+id/createGameLayout"
+                    app:layout_constraintStart_toStartOf="@+id/createGameLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/textPermaNotif" />
+
+                <Button
+                    android:id="@+id/button_join_clicker_0"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#00FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/joinGameLayout"
+                    app:layout_constraintEnd_toEndOf="@+id/joinGameLayout"
+                    app:layout_constraintStart_toStartOf="@+id/joinGameLayout"
+                    app:layout_constraintTop_toTopOf="@+id/joinGameLayout"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/button_tutorial"
+                    android:layout_width="45dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/how_to_play_brown"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textPermaNotif"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lapsus_pro_bold"
+                android:gravity="end"
+                android:textColor="#FFC6C6"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/createGameLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/joinGameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/createGameLayout">
+
+                <ImageView
+                    android:id="@+id/image_join_0"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:alpha="1"
+                    android:tintMode="add"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/button_join_game_0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/arrows_glow_brown" />
+
+                <TextView
+                    android:id="@+id/button_join_game_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_marginEnd="12dp"
+                    android:alpha="1"
+                    android:background="#00FFFFFF"
+                    android:fontFamily="@font/lapsus_pro_bold"
+                    android:rotation="0"
+                    android:shadowColor="@color/colorPrimaryDark"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="15"
+                    android:text="JOIN GAME"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_join_0"
+                    app:layout_constraintEnd_toStartOf="@+id/image_join_0"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/image_join_0"
+                    app:layout_constraintVertical_bias="0.42000002" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/createGameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/joinGameLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPermaNotif"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <TextView
+                    android:id="@+id/button_create_game_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:alpha="1"
+                    android:background="#00FFFFFF"
+                    android:fontFamily="@font/lapsus_pro_bold"
+                    android:rotation="0"
+                    android:shadowColor="@color/colorPrimaryDark"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="15"
+                    android:text="CREATE GAME"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/image_create_0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.59000003" />
+
+                <ImageView
+                    android:id="@+id/image_create_"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:alpha="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:foregroundTintMode="add"
+                    android:tint="#FFFFFF"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/image_create_0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.62"
+                    app:srcCompat="@drawable/ic_bull_add_bg" />
+
+                <ImageView
+                    android:id="@+id/image_create_0"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:alpha="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:foregroundTintMode="add"
+                    android:tintMode="add"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bull_add_glow_brown" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/button_create_clicker_0"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/createGameLayout"
+                app:layout_constraintEnd_toEndOf="@+id/createGameLayout"
+                app:layout_constraintStart_toStartOf="@+id/createGameLayout"
+                app:layout_constraintTop_toBottomOf="@+id/textPermaNotif" />
+
+            <Button
+                android:id="@+id/button_join_clicker_0"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/joinGameLayout"
+                app:layout_constraintEnd_toEndOf="@+id/joinGameLayout"
+                app:layout_constraintStart_toStartOf="@+id/joinGameLayout"
+                app:layout_constraintTop_toTopOf="@+id/joinGameLayout"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/button_tutorial"
+                android:layout_width="45dp"
+                android:layout_height="64dp"
+                android:background="@drawable/how_to_play_brown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/titleFrame_0"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/layoutMainMenuBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutMainMenuTop"
+            app:layout_constraintVertical_chainStyle="spread_inside">
+
+            <ImageView
+                android:id="@+id/img_spiny_long"
+                android:layout_width="263dp"
+                android:layout_height="301dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginBottom="50dp"
+                android:alpha="1"
+                android:tint="#FFFFFF"
+                app:srcCompat="@drawable/ic_spiny1" />
+
+            <ImageView
+                android:id="@+id/img_spiny_short"
+                android:layout_width="213dp"
+                android:layout_height="244dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="50dp"
+                android:adjustViewBounds="false"
+                android:alpha="0.8"
+                android:cropToPadding="false"
+                android:scaleType="centerInside"
+                android:tint="#D8D8D8"
+                app:srcCompat="@drawable/ic_spiny1" />
+
+            <ImageView
+                android:id="@+id/img_bubble_0"
+                android:layout_width="79dp"
+                android:layout_height="81dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="240dp"
+                android:layout_marginBottom="250dp"
+                app:srcCompat="@drawable/transparent_bubble" />
+
+            <ImageView
+                android:id="@+id/img_utter_0"
+                android:layout_width="260dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginBottom="180dp"
+                android:rotation="350"
+                app:srcCompat="@drawable/transparent_utter" />
+
+            <ImageView
+                android:id="@+id/img_bull_pic_0"
+                android:layout_width="197dp"
+                android:layout_height="199dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginRight="150dp"
+                app:srcCompat="@drawable/bull_img" />
+
+            <ImageView
+                android:id="@+id/img_bull_0"
+                android:layout_width="210dp"
+                android:layout_height="82dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="115dp"
+                app:srcCompat="@drawable/transparent_bull" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutMainMenuTop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/imageInfo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_info_bg"
+                android:backgroundTint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/button_info_0"
+                app:layout_constraintEnd_toEndOf="@+id/button_info_0"
+                app:srcCompat="@drawable/ic_info" />
+
+            <Button
+                android:id="@+id/button_info_0"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:backgroundTint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_buy_ad_free_version_0"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/button_audio_0"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#FFFFFF"
+                android:button="@null"
+                android:checked="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button_buy_ad_free_version_0"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_buy_ad_free_version_0"
+                style="@style/button"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/lapsus_pro_bold"
+                android:text="BUY AD-FREE VERSION!"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_audio_0"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button_info_0"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageAudio"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/ic_sound_bg"
+                android:backgroundTint="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/button_audio_0"
+                app:layout_constraintEnd_toEndOf="@id/button_audio_0"
+                app:srcCompat="@drawable/sound_icon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutNotif"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_popup_text"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textNotifContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lapsus_pro_bold"
+                android:text="Text"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/dotsNotif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.arrowsmith.llv1.classes.LoadingDots
+                android:id="@+id/dotsNotif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:LoadingDots_dots_space="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textNotifContent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

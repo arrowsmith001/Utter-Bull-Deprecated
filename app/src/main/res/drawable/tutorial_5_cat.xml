@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:drawable="@drawable/cat_1_1133"
+    android:duration="@integer/duration_min">
+
+</item><item android:drawable="@drawable/cat_1_1134"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1135"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1136"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1137"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1138"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1139"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1140"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1141"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1142"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1143"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1144"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1145"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1146"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1147"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1148"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1149"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1150"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1151"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1152"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1153"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1154"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1155"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1156"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1157"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1158"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1159"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1160"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1161"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1162"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1163"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1164"
+    android:duration="@integer/duration_min">
+
+    </item>--><item android:drawable="@drawable/cat_1_1165"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1166"
+    android:duration="@integer/duration_min">
+
+    </item><item android:drawable="@drawable/cat_1_1167"
+    android:duration="@integer/duration_min">
+
+    </item>
+</animation-list>

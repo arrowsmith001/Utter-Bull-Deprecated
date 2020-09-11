@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!--background to compensate the transparency under shadow and glow (for bigger depth values)-->
+
+    <!--bottom, light, outer glow-->
+    <item
+        android:top="5dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="#00FFFFFF" />
+        </shape>
+    </item>
+
+    <!--top, dark, inner shadow-->
+    <item
+        android:bottom="5dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <solid android:color="#1A000000" />
+        </shape>
+    </item>
+
+    <!--main bg-->
+    <item>
+        <shape android:shape="rectangle">
+
+            <solid android:color="#CCCCCC">
+            </solid>
+            <corners android:radius= "20dp" />
+        </shape>
+    </item>
+
+    <!--bottom light-->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#8F8F8F"
+                android:centerColor="#00CCCCCC"
+                android:endColor="#008F8F8F"
+                android:angle="90"
+                android:centerX="15%"/>
+            <corners android:radius= "20dp" />
+        </shape>
+    </item>
+
+
+    <!--top light-->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#008F8F8F"
+                android:centerColor="#00CCCCCC"
+                android:endColor="#8F8F8F"
+                android:angle="90"
+                android:centerX="85%"/>
+            <corners android:radius= "20dp" />
+        </shape>
+    </item>
+
+
+    <!--right light-->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#008F8F8F"
+                android:centerColor="#00CCCCCC"
+                android:endColor="#8F8F8F"
+                android:angle="0"
+                android:centerX="85%"/>
+            <corners android:radius= "20dp" />
+        </shape>
+    </item>
+
+
+    <!--right light-->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#8F8F8F"
+                android:centerColor="#00CCCCCC"
+                android:endColor="#008F8F8F"
+                android:angle="0"
+                android:centerX="15%"/>
+            <corners android:radius= "20dp" />
+        </shape>
+    </item>
+
+
+
+
+</layer-list>

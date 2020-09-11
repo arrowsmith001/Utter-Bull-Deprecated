@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenu">
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.arrowsmith.llv1.MainMenu"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_waitingRoom"
+            app:destination="@id/waitingRoom"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_mainMenu_to_tutorial"
+            app:destination="@id/tutorial" />
+        <argument
+            android:name="showButtonsNow"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePhase1DelegateRoles"
+        android:name="com.arrowsmith.llv1.GamePhase1DelegateRoles"
+        android:label="fragment_game_phase1_delegate_roles"
+        tools:layout="@layout/gp1_delegate_roles_fragment" >
+        <action
+            android:id="@+id/action_gamePhase1DelegateRoles_to_textEntryFragment"
+            app:destination="@id/textEntryFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_gamePhase1DelegateRoles_to_waitingRoom"
+            app:destination="@id/waitingRoom" />
+    </fragment>
+    <fragment
+        android:id="@+id/waitingRoom"
+        android:name="com.arrowsmith.llv1.WaitingRoom"
+        android:label="fragment_waiting_room"
+        tools:layout="@layout/fragment_waiting_room" >
+        <action
+            android:id="@+id/action_waitingRoom_to_gamePhase1DelegateRoles2"
+            app:destination="@id/gamePhase1DelegateRoles"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_waitingRoom_to_mainMenu"
+            app:destination="@id/mainMenu">
+            <argument
+                android:name="showButtonsNow"
+                app:argType="boolean"
+                android:defaultValue="false"
+            />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/textEntryFragment"
+        android:name="com.arrowsmith.llv1.GamePhase2TextEntryFragment"
+        android:label="fragment_text_entry"
+        tools:layout="@layout/gp2_text_entry_fragment" >
+        <action
+            android:id="@+id/action_textEntryFragment_to_chooseWhoseTurn"
+            app:destination="@id/chooseWhoseTurn"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_textEntryFragment_to_waitingRoom"
+            app:destination="@id/waitingRoom" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseWhoseTurn"
+        android:name="com.arrowsmith.llv1.GamePhase3ChooseWhoseTurn"
+        android:label="fragment_choose_whose_turn"
+        tools:layout="@layout/gp3_choose_whose_turn_fragment" >
+        <action
+            android:id="@+id/action_chooseWhoseTurn_to_playFragment"
+            app:destination="@id/playFragment"
+            app:enterAnim="@anim/pop_in_long"
+            app:exitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.arrowsmith.llv1.GamePhase4PlayFragment"
+        android:label="fragment_play"
+        tools:layout="@layout/gp4_play_fragment" >
+        <action
+            android:id="@+id/action_playFragment_to_waitingRoom"
+            app:destination="@id/waitingRoom" />
+        <action
+            android:id="@+id/action_playFragment_to_chooseWhoseTurn"
+            app:destination="@id/chooseWhoseTurn" />
+        <action
+            android:id="@+id/action_playFragment_to_gamePhase5RevealsIntro"
+            app:destination="@id/gamePhase5RevealsIntro"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePhase5RevealsIntro"
+        android:name="com.arrowsmith.llv1.GamePhase5RevealsIntro"
+        android:label="gp5_reveals_intro_fragment"
+        tools:layout="@layout/gp5_reveals_intro_fragment" >
+        <action
+            android:id="@+id/action_gamePhase5RevealsIntro_to_waitingRoom"
+            app:destination="@id/waitingRoom" />
+        <action
+            android:id="@+id/action_gamePhase5RevealsIntro_to_gamePhase6RevealsBaseFragment"
+            app:destination="@id/gamePhase6RevealsBaseFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePhase6RevealsBaseFragment"
+        android:name="com.arrowsmith.llv1.GamePhase6RevealsBaseFragment"
+        android:label="gp5_reveals_intro_fragment"
+        tools:layout="@layout/gp5_reveals_intro_fragment" >
+        <action
+            android:id="@+id/action_gamePhase6RevealsBaseFragment_to_waitingRoom"
+            app:destination="@id/waitingRoom" />
+        <action
+            android:id="@+id/action_gamePhase6RevealsBaseFragment_to_gamePhase1DelegateRoles"
+            app:destination="@id/gamePhase1DelegateRoles" />
+    </fragment>
+    <fragment
+        android:id="@+id/tutorial"
+        android:name="com.arrowsmith.llv1.Tutorial"
+        android:label="fragment_tutorial"
+        tools:layout="@layout/fragment_tutorial" >
+        <action
+            android:id="@+id/action_tutorial_to_mainMenu"
+            app:destination="@id/mainMenu" />
+        <argument
+            android:name="fromMainMenu"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <argument
+        android:name="showButtonsNow"
+        android:defaultValue="false" />
+</navigation>
